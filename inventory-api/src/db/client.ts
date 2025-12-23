@@ -1,3 +1,5 @@
-export function handler(request: Request) {
-  return new Response("Not implemented", { status: 501 });
+import { jsonResponse } from "../utils/response";
+
+export function handler(request: Request, env: a ny) {
+  return jsonResponse({ message: "DB client not implemented" }, 501);
 }
