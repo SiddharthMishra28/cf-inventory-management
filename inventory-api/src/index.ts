@@ -47,3 +47,6 @@ export default {
     }
   }
 };
+
+export class IssueWorkflow {}
+export class ReturnWorkflow {}
