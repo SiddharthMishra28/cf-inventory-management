@@ -1,0 +1,24 @@
+name = "inventory-api"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+
+# Enable Workers AI only if required later (keep commented for now)
+# [ai]
+# binding = "AI"
+
+# D1 Database (Free tier)
+[[d1_databases]]
+binding = "DB"
+database_name = "inventory_db"
+database_id = "926e5bb7-07e1-4ea7-8868-14e683a7073a"
+
+# Workflows bindings (Free tier)
+[[workflows]]
+name = "issue-workflow"
+binding = "ISSUE_WORKFLOW"
+class_name = "IssueWorkflow"
+
+[[workflows]]
+name = "return-workflow"
+binding = "RETURN_WORKFLOW"
+class_name = "ReturnWorkflow"
